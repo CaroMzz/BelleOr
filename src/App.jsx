@@ -1,13 +1,11 @@
 import './App.css'
-import NavBar from "./components/NavBar"
-import ItemListContainer from "./components/ItemListContainer"
+import NavBar from "./components/NavBar/NavBar"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 function App() {
-  const categories = ["Anillos", "Cadenitas", "Pulseras", "Aros", "Conjuntos"]
-
   return (
     <div>
-      <NavBar categoriesNav = {categories}></NavBar>
+      <NavBar/>
       <ItemListContainer message={"¡Bienvenido a Belle Or!"}></ItemListContainer>
     </div>
   )
