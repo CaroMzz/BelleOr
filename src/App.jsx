@@ -1,11 +1,12 @@
 import './App.css'
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import AppRouter from "./AppRouter";
 
 function App() {
   return (
     <div>
-      <NavBar/>
+      <AppRouter />
       <ItemListContainer message={"¡Bienvenido a Belle Or!"}></ItemListContainer>
     </div>
   )
