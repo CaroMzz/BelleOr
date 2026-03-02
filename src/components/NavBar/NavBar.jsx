@@ -10,6 +10,9 @@ function NavBar({ categories }) {
             <img src={logo} alt="Logo de Belle Or" />
             <div className="categories">
                 <ul>
+                    <li>
+                        <Link to="/">Todas</Link>
+                    </li>
                     {categories.map((category) => (
                         <li key={category}>
                             <Link to={`/category/${category}`}>

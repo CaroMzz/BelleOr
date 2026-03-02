@@ -1,11 +1,28 @@
-import './ItemListContainer.css'
+import "./ItemListContainer.css";
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
-function ItemListContainer({ message }) {
-    return(
-        <div className="greeting">
-            <h1>{message}</h1>
-        </div>
-    )
+function ItemListContainer() {
+  const [products, setProducts] = useState([]);
+
+  const { categoryName } = useParams();
+
+  useEffect(() => {
+    let url = "https://dummyjson.com/products";
+
+    if (categoryName) {
+      url = `https://dummyjson.com/products/category/${categoryName}`;
+    }
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.products);
+      });
+  }, [categoryName]);
+
+  return <ItemList products={products} />;
 }
 
-export default ItemListContainer
+export default ItemListContainer;

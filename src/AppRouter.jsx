@@ -30,6 +30,8 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/category/:categoryName" element={<ItemListContainer />} />
+                <Route path="/item/:itemId" element={<ItemListContainer />} />
+                <Route path="*" element={<h2>404</h2>}/>
             </Routes>
         </BrowserRouter>
     )

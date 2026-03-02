@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <AppRouter />
-      <ItemListContainer message={"¡Bienvenido a Belle Or!"}></ItemListContainer>
     </div>
   )
 }
