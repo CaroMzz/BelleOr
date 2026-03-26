@@ -1,19 +1,7 @@
-import { useState } from "react";
-import "./ItemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import '../ItemDetail/ItemDetail.css'
 
 function ItemDetail({ product }) {
-  const [count, setCount] = useState(1);
-
-  const increase = () => {
-    setCount(count + 1);
-  };
-
-  const decrease = () => {
-    if (count > 1) {
-      setCount(count - 1);
-    }
-  };
-
   return (
     <div className="item-detail">
       <img src={product.thumbnail} alt={product.title} />
@@ -21,17 +9,9 @@ function ItemDetail({ product }) {
       <p>{product.description}</p>
       <p>Precio: ${product.price}</p>
 
-      <div>
-        <button onClick={decrease}>-</button>
-        <span>{count}</span>
-        <button onClick={increase}>+</button>
-      </div>
-
-      <button onClick={() => console.log("Agregar", count)}>
-        Agregar al carrito
-      </button>
+      <ItemCount product={product} />
     </div>
   );
 }
 
-export default ItemDetail;
+export default ItemDetail
