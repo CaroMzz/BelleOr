@@ -1,16 +1,161 @@
-# React + Vite
+# Belle Or
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce desarrollado con **React + Vite**, que permite visualizar productos, filtrarlos por categoría y navegar entre distintas vistas de la aplicación.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## React Compiler
+- React  
+- Vite  
+- Firebase  
+- React Router DOM  
+- React Hot Toast  
+- ESLint  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clonar el repositorio:
+
+git clone https://github.com/tu-usuario/belleor.git
+
+2. Ingresar al directorio:
+
+cd belleor
+
+3. Instalar dependencias:
+
+npm install
+
+---
+
+## Scripts disponibles
+
+npm run dev      # entorno de desarrollo  
+npm run build    # build de producción  
+npm run preview  # previsualizar build  
+npm run lint     # ejecutar linter  
+
+---
+
+## Estructura del proyecto
+
+src/
+│
+├── components/
+│   ├── Item/
+│   ├── ItemList/
+│   ├── ItemListContainer/
+│   ├── ItemDetailContainer/
+│   ├── NavBar/
+│   ├── NavBarContainer/
+│   ├── Cart/
+│   ├── CartContainer/
+│   ├── Checkout/
+│   ├── ItemCount/
+│   ├── ItemDetail/
+│
+├── assets/
+├── context/
+├── firebase/
+├── App.jsx
+├── AppRouter.jsx
+├── main.jsx
+
+---
+
+## Firebase
+
+El proyecto utiliza Firebase para la gestión de datos (productos y categorías).
+
+---
+
+## Funcionalidades
+
+- Listado de productos  
+- Filtrado por categorías  
+- Navegación dinámica con React Router  
+- Notificaciones con React Hot Toast  
+- Renderizado dinámico de componentes
+- Agregar y eliminar productos de un carrito
+- Vaciar el carrito
+- Finalizar una compra  
+
+---
+
+## Dependencias principales
+
+{
+  "firebase": "^12.11.0",
+  "react": "^19.2.0",
+  "react-dom": "^19.2.0",
+  "react-hot-toast": "^2.6.0",
+  "react-router-dom": "^7.13.1"
+}
+
+---
+
+## Notas
+
+Proyecto realizado como práctica de desarrollo frontend con React, aplicando conceptos como componentes, hooks y manejo de rutas.
+
+---
+
+## Deploy
+
+El proyecto se encuentra desplegado en Vercel:
+
+https://tu-app.vercel.app
+
+### Pasos para desplegar en Vercel
+
+1. Crear una cuenta en https://vercel.com  
+2. Conectar tu repositorio de GitHub  
+3. Seleccionar el proyecto  
+4. Configurar las variables de entorno (Firebase si corresponde)  
+5. Hacer click en "Deploy"  
+
+Vercel detecta automáticamente proyectos con Vite, por lo que no requiere configuración adicional.
+
+---
+
+## Capturas del proyecto
+
+### Home
+Vista principal donde se muestran todos los productos disponibles.
+![alt text](image-1.png)
+
+### Categorías
+Filtrado de productos según la categoría seleccionada.
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+### Detalle de producto
+Vista individual con información detallada del producto.
+![alt text](image-5.png)
+
+### Navegación
+Barra de navegación que permite moverse entre las distintas secciones de la aplicación.
+![alt text](image-6.png)
+
+### Carrito
+Muestra de los productos elegidos para realizar la compra. Se pueden eliminar productos, vaciar el carrito o ir al checkout.
+![alt text](image-7.png)
+![alt text](image-8.png)
+
+### Checkout
+Formulario para finalizar la compra.
+![alt text](image-9.png)
+
+### Finalización de la compra
+Cartel de confirmación de compra exitosa.
+![alt text](image-10.png)
+
+---
+
+## Autor
+
+Carolina Muñoz
