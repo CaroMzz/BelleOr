@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
+import toast from 'react-hot-toast'
 
 function ItemCount({ product }) {
   const [count, setCount] = useState(1);
@@ -14,6 +15,7 @@ function ItemCount({ product }) {
   };
   const handleAddToCart = () => {
     addToCart({...product, count})
+    toast.success('Se agregó el producto al carrito')
   };
 
   return (

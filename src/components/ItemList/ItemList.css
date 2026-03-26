@@ -1,0 +1,6 @@
+.item-list {
+  display: flex;
+  flex-wrap: wrap;   /* permite que bajen a otra fila */
+  gap: 20px;
+  justify-content: center;
+}

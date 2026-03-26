@@ -1,12 +1,12 @@
 import './App.css'
-import NavBar from "./components/NavBar/NavBar"
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import AppRouter from "./AppRouter";
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
     <div>
       <AppRouter />
+      <Toaster />
     </div>
   )
 }

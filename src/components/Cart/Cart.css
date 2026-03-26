@@ -10,7 +10,6 @@
   gap: 20px;
 }
 
-/* 🔥 CARD HORIZONTAL */
 .cart-card {
   display: flex;
   align-items: center;
@@ -24,14 +23,12 @@
   text-align: center;
 }
 
-/* imagen tipo producto */
 .cart-img {
   width: 150px;
   height: auto;
   border-radius: 10px;
 }
 
-/* info como en tus cards */
 .cart-info {
   flex: 1;
 }
@@ -44,13 +41,15 @@
   margin: 4px 0;
 }
 
-/* descripción más suave */
 .desc {
   font-size: 14px;
   color: #777;
 }
 
-/* total */
+.clear-btn{
+  margin-right:20px;
+}
+
 .total {
   text-align: right;
   margin-top: 20px;
