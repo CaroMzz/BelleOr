@@ -35,7 +35,9 @@ function CartProvider({ children }) {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, getCartQuantity, removeItem, clearCart, }}>
+    <CartContext.Provider
+      value={{ cart, addToCart, getCartQuantity, removeItem, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );

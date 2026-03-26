@@ -9,15 +9,10 @@ function ItemDetailContainer() {
   const { itemId } = useParams();
 
   useEffect(() => {
-      getDetail(itemId)
-      .then(detail =>setProduct(detail) )
+    getDetail(itemId).then((detail) => setProduct(detail));
   }, [itemId]);
 
-  return (
-    <>
-      {product && <ItemDetail product={product} />}
-    </>
-  );
+  return <>{product && <ItemDetail product={product} />}</>;
 }
 
 export default ItemDetailContainer;

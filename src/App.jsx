@@ -1,6 +1,6 @@
-import './App.css'
+import "./App.css";
 import AppRouter from "./AppRouter";
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <AppRouter />
       <Toaster />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

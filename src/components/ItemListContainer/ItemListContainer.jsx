@@ -11,9 +11,9 @@ function ItemListContainer() {
 
   useEffect(() => {
     if (categoryName) {
-      getProductsByCategories(categoryName).then((prods) => setProducts(prods))
+      getProductsByCategories(categoryName).then((prods) => setProducts(prods));
     } else {
-      getProducts().then((prods) => setProducts(prods))
+      getProducts().then((prods) => setProducts(prods));
     }
   }, [categoryName]);
 

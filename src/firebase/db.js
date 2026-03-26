@@ -53,7 +53,7 @@ export const getDetail = async (id) => {
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {
-    return {...docSnap.data(), id: docSnap.id}
+    return { ...docSnap.data(), id: docSnap.id };
   } else {
     console.log("No such document!");
   }

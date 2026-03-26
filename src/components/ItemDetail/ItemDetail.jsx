@@ -1,5 +1,5 @@
 import ItemCount from "../ItemCount/ItemCount";
-import '../ItemDetail/ItemDetail.css'
+import "../ItemDetail/ItemDetail.css";
 
 function ItemDetail({ product }) {
   return (
@@ -14,4 +14,4 @@ function ItemDetail({ product }) {
   );
 }
 
-export default ItemDetail
+export default ItemDetail;

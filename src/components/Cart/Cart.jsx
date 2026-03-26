@@ -18,11 +18,7 @@ function Cart({ cart, total }) {
           <div className="cart-list">
             {cart.map((item) => (
               <div key={item.id} className="cart-card">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="cart-img"
-                />
+                <img src={item.image} alt={item.name} className="cart-img" />
 
                 <div className="cart-info">
                   <h3>{item.name}</h3>

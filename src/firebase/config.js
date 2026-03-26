@@ -10,7 +10,7 @@ const firebaseConfig = {
   projectId: "belleor-db",
   storageBucket: "belleor-db.firebasestorage.app",
   messagingSenderId: "922027561823",
-  appId: "1:922027561823:web:80cb342c4d5f969ccc5cea"
+  appId: "1:922027561823:web:80cb342c4d5f969ccc5cea",
 };
 
 // Initialize Firebase
